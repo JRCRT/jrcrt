@@ -1,0 +1,245 @@
+:root {
+  font-family: "Chivo";
+  /* font-family: "Sora"; */
+  font-size: 11px;
+  --grey: #575960;
+  --color-1: #493657;
+  --color-2: #ce7da5;
+  --color-3: #bee5bf;
+  --color-4: #dff3e3;
+  --color-5: #ffd1ba;
+  --nav-color: var(--color-1);
+  --login-button: var(--color-1);
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    to up,
+    var(--color-5),
+    var(--color-2),
+    var(--color-1)
+  );
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  background-color: var(--nav-color);
+  height: 70px;
+  font-size: 11px;
+}
+
+input {
+  width: 130px;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+}
+
+.login-button {
+  background-color: var(--login-button);
+  border-style: none;
+  border: 1px solid grey;
+}
+
+.nav {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 40px;
+  height: 100%;
+  color: white;
+}
+
+.nav-item:nth-child(2) {
+  margin-bottom: 16px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+  margin-left: 1em;
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+  padding-top: 4px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  padding: 10px 10px;
+}
+
+.cover {
+  width: 67%;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 33%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 7px;
+}
+
+.name {
+  display: flex;
+  width: 100%;
+  gap: 7px;
+}
+.first-name {
+  box-sizing: border-box;
+  width: 50%;
+  height: 30px;
+}
+.last-name {
+  box-sizing: border-box;
+  width: 50%;
+  height: 30px;
+}
+.email,
+.password {
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+}
+.radio-gender {
+  display: flex;
+  align-items: center;
+}
+
+.radio-gender label,
+span {
+  margin-top: 7px;
+  margin-left: 3px;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.radio-gender input {
+  width: 10px;
+}
+
+.birthday {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.agreement {
+  width: 60%;
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.signup-button {
+  width: 150px;
+  height: 30px;
+  border-radius: 4px;
+  border-style: none;
+  background-color: var(--color-2);
+}
+
+.form a {
+  color: blue;
+}
+.dropdown-date {
+  margin-left: 4px;
+}
+.create-page {
+  margin-top: 30px;
+}
+
+svg {
+  width: 12px;
+  height: 12px;
+}
+
+img {
+  width: 430px;
+  height: 180px;
+}
+
+select {
+  background-color: white;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1em;
+  padding: 0.5em 1.8em 0.5em 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("./asset/updown.png");
+  background-position: calc(100% - 0.1rem), 100% 0;
+  background-size: 1.2em 1.1em;
+  background-repeat: no-repeat;
+}
+
+.form-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.form-title-1 {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.birthday-label,
+.gender-label,
+.agreement,
+.create-page {
+  color: var(--grey);
+  font-weight: bold;
+}
+
+.forgotten {
+  color: #bdbec3;
+}
+
+.cover {
+  margin: 20px 0px 0px 31px;
+}
+
+.cover h2 {
+  color: var(--color-1);
+  font-size: 20x;
+  font-weight: bold;
+}
